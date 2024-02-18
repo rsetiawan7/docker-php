@@ -1,0 +1,6 @@
+#!/bin/sh
+
+docker push $DOCKER_REPO:7-apache-ips-4
+docker push $DOCKER_REPO:8-apache-ips-4
+docker push $DOCKER_REPO:7-apache-phpbb-3
+docker push $DOCKER_REPO:8-apache-phpbb-3
