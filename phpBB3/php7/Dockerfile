@@ -1,4 +1,4 @@
-FROM php:8.3-apache
+FROM php:7-apache
 
 RUN \
   apt-get update
@@ -23,9 +23,7 @@ RUN \
   docker-php-ext-install -j$(nproc) \
     bcmath \
     curl \
-    exif \
     gd \
-    gmp \
     mysqli \
     opcache \
     zip
@@ -34,9 +32,7 @@ RUN \
   docker-php-ext-enable \
     bcmath \
     curl \
-    exif \
     gd \
-    gmp \
     mysqli \
     opcache \
     zip

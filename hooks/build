@@ -1,0 +1,6 @@
+#!/bin/sh
+
+docker build -f IPS4/php7/Dockerfile -t $IMAGE_NAME:7-apache-ips-4 .
+docker build -f IPS4/php8/Dockerfile -t $IMAGE_NAME:8-apache-ips-4 .
+docker build -f phpBB3/php7/Dockerfile -t $IMAGE_NAME:7-apache-phpbb-3 .
+docker build -f phpBB3/php8/Dockerfile -t $IMAGE_NAME:8-apache-phpbb-3 .
